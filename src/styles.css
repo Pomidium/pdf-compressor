@@ -1,0 +1,49 @@
+.pdf-compressor-heading {
+	margin: 1.5rem 0 0.25rem;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--foreground);
+}
+
+.pdf-compressor-status {
+	margin: 0 0 0.75rem;
+	font-size: 0.85rem;
+	color: var(--muted-foreground);
+}
+
+.pdf-compressor-list {
+	margin: 0.75rem 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.85rem;
+	border-top: 1px solid var(--border);
+}
+
+.pdf-compressor-list li {
+	display: flex;
+	gap: 1rem;
+	align-items: baseline;
+	padding: 0.4rem 0;
+	border-bottom: 1px solid var(--border);
+	color: var(--muted-foreground);
+}
+
+.pdf-compressor-name {
+	flex: 1 1 0;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--foreground);
+}
+
+.pdf-compressor-outcome,
+.pdf-compressor-when {
+	flex: none;
+	font-variant-numeric: tabular-nums;
+}
+
+.pdf-compressor-failed,
+.pdf-compressor-list .pdf-compressor-problem {
+	color: var(--destructive, #c0392b);
+}
